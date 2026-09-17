@@ -1,0 +1,38 @@
+.grid{
+  width: 30vw;
+  height: 50vh;
+  margin: 0;
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  /*grid-template-columns: [main-start] 1fr [content-sta;*/
+  /*grid-template-columns: repeat(4, 1fr);*/ 
+  /* or grid-template-columns: 1fr 1fr 1fr 1fr can also be used*/
+  grid-template-areas: 
+    "area-a area-a area-i area-b area-l area-l"
+    "area-a area-a area-i area-j area-c area-d"
+    "area-m area-m area-k area-j area-h area-h"
+    "area-e area-f area-k area-g area-h area-h"
+  ;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.item_1{  grid-area: area-a;}
+.item_2{ grid-area: area-b; }
+.item_3{ grid-area: area-c; }
+.item_4{ grid-area: area-d; }
+.item_5{ grid-area: area-e; }
+.item_6{ grid-area: area-f; }
+.item_7{ grid-area: area-g; }
+.item_8{ grid-area: area-h; }
+.item_9{ grid-area: area-i; }
+.item_10{ grid-area: area-j; }
+.item_11{ grid-area: area-k; }
+.item_12{ grid-area: area-l; }
+.item_13{ grid-area: area-m; }

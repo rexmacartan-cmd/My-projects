@@ -1,0 +1,9 @@
+Step 1: I'll Change the value of the variable totalTickets from 13 to 50
+const totalTickets = 50;
+
+Step 2: Since the variable has already been changed, everything linked or connected to the variable automatically changes also
+const winningTicket = Math.floor(Math.random() * totalTickets) + 1;
+
+Step 3: I'll save changes and run the code to check if it works by announcing a number from the range of 1 to 50
+console.log(" Drawing the winning raffle ticket...");
+console.log(`🎉 Congratulations to the holder of Ticket Number: ${winningTicket}!`);
