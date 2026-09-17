@@ -1,0 +1,424 @@
+.nav{
+  display: flex;
+  gap: 70px;
+  background-color: transparent;
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.nav-right{
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.name{
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+.em{
+  font-size: larger;
+  font-family: Arial Narrow Bold;
+}
+
+.nav a{
+  position: relative;
+}
+
+.nav a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after{
+  width: 100%;
+}
+
+.btn-signup{
+  background-color: blue;
+  color: white;
+  border-color: transparent;
+  height: 40px;
+  width: 80px;
+  border-radius: 8px;
+  margin-top: -5px;
+}
+
+.logo{
+  margin-left: 10px;
+  margin-right: -80px;
+  margin-top: -7px;
+  height: 50px;
+  width: 50px;
+}
+
+button{
+  border-style: solid;
+}
+
+body{
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0.701) 30%, rgba(205, 237, 255, 0.963) 100%);
+  background-attachment: fixed;
+}
+
+.hero-image{
+  margin-left: 622px;
+  margin-right: auto;
+  margin-top: -492px;
+  width: 100%;
+  height: 100%;
+  width: 580px;
+  object-fit: cover;
+  display: flex;
+  flex: 1;
+  /*making the img bottom transparent and blend in*/
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  transition: transform 0.6s ease;
+}
+
+.hero-image:hover{
+transform: scale(1.12);
+}
+
+#lang{
+  border-style: solid; 
+  border-width: 2px; 
+  border: none;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.hero-text1{
+  margin-top: 50px;
+  margin-left: 60px;
+  color: blue;
+  margin-bottom: -60px;
+  font-size: 16px;
+}
+
+.hero-text2{
+  margin-left: 58px;
+  font-size: 65px;
+  font-family: Arial Narrow Bold;
+  margin-bottom: 2px;
+  font-weight: bolder;
+}
+
+.btn-explore{
+  background-color: blue;
+  color: white;
+  border-color: transparent;
+  height: 40px;
+  width: 120px;
+  border-radius: 8px;
+  margin-top: 50px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.hero-text2 p{
+  margin-bottom: -30px;
+}
+
+.places img{
+  margin-top: 130px;
+  margin-left: 502px;
+  margin-bottom: 150px;
+  height: 500px;
+  width: 700px;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  transition: transform 0.6s ease;
+}
+
+.places:hover img{
+  transform: scale(1.1);
+}
+
+.dis{
+  margin-top: 150px;
+  text-align: center;
+  font-size: 50px;
+}
+.img-text{
+  margin-top: -570px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+h2{
+  margin-bottom: -20px;
+}
+
+.places p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 63px;
+  margin-bottom: -40px;
+}
+
+.places2 img{
+  margin-top: 250px;
+  margin-left: -52px;
+  margin-bottom: 150px;
+  height: 500px;
+  width: 700px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  transition: transform 0.6s ease;
+}
+
+.places2:hover img{
+  transform: scale(1.1);
+}
+
+.img-text2{
+  margin-left: 720px;
+  margin-top: -590px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.places2 h2{
+  margin-bottom: -25px;
+}
+.places2 p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: -40px;
+}
+
+
+@media(max-width: 768px) {
+ 
+  .nav{
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-right{
+    display: flex;
+    margin-right: 80px;
+    margin-top: -20px;
+    margin-left: -45px;
+    font-size: 11px;
+    gap: 15px;
+    font-weight: bold;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .name{
+    font-size: 15px;
+    margin-left: -5px;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: -25px;
+  }
+
+  .em{
+    font-weight: bolder;
+    font-size: larger;
+    font-family: Arial Narrow Bold;
+  }
+
+  .nav a{
+    position: relative;
+  }
+
+  .nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+  }
+
+  .nav a:hover::after{
+    width: 100%;
+  }
+
+  .btn-signup{
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    font-size: 8px;
+    font-weight: bolder;
+    height: 25px;
+    width: 50px;
+    border-radius: 8px;
+    margin-top: -10px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  .logo{
+    margin-left: -45px;
+    margin-right: -70px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  button{
+    border-style: solid;
+  }
+
+  .lang{
+    background-color: transparent;
+    border-style: solid; 
+    border-width: 2px; 
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+
+  body{
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.701) 30%, rgba(205, 237, 255, 0.963) 100%);
+    background-attachment: fixed;
+  }
+  .hero-image{
+    margin-left: 205px;
+    position: relative;
+    margin-right: auto;
+    margin-top: -182px;
+    height: 100%;
+    width: 143px;
+    height: 170px;
+    object-fit: cover;
+    display: flex;
+    flex: 1;
+    /*making the img bottom transparent and blend in*/
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    z-index: 1;
+  }
+
+  .hero-text1{
+    margin-top: 50px;
+    margin-left: 10px;
+    color: blue;
+    margin-bottom: 20px;
+    font-size: 8px;
+  }
+
+  .hero-text2{
+    position: relative;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: Arial Narrow Bold;
+    margin-bottom: 1px;
+    margin-top: -20px;
+    font-weight: bolder;
+    z-index: 2;
+  }
+
+  .hero-text2 p{
+    margin-bottom: -10px;
+  }
+
+  .btn-explore{
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    font-size: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+
+  .places img{
+    margin-top: 130px;
+    margin-left: 160px;
+    margin-bottom: 150px;
+    height: 200px;
+    width: 190px;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+  }
+
+  .img-text{
+    margin-top: -320px;
+    font-weight: bolder;
+    font-size: 10px;
+  }
+
+  .places{
+    margin-top: -70px;
+  }
+
+  h2{
+    margin-bottom: -10px;
+  }
+
+  .places p{
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: -25px;
+  }
+
+  .places2 img{
+    margin-top: 150px;
+    margin-left: -52px;
+    margin-bottom: 150px;
+    height: 200px;
+    width: 215px;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+
+  .img-text2{
+    margin-left: 190px;
+    margin-top: -335px;
+    font-weight: bolder;
+    font-size: 10px;
+  }
+
+  .places2 h2{
+    margin-bottom: 20px;
+  }
+  .places2 p{
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: -10px;
+  }
+  .dis{
+    margin-top: 90px;
+    font-size: 20px;
+    margin-left: 25px;
+    text-align: left;
+  }
+}

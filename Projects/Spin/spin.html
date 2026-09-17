@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotat</title>
+  <link rel="stylesheet" href="./spin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+  .fa-solid {
+    font-size:200px;
+    display: inline-block;
+    animation: spinfan 800ms linear infinite, colorchange 9ms ease-in-out infinite;
+    }
+    @keyframes spinfan{
+    0%{transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+    }
+    @keyframes colorchange {
+      0% { color: red; }
+      50% { color: green; }
+      75% { color: blue; }
+      100% { color: red; }
+    }
+</style>
+</head>
+<body>
+  <div class="fan">
+    <i class="fa-solid fa-fan"></i>
+  </div>
+</body>
+</html>
+
