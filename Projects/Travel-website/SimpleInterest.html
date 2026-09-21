@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator</title>
+  <link rel="stylesheet" href="si.css">
+</head>
+<body>
+  <div class="div1">
+    <h1>Simple Interest Calculator</h1>
+    <h2>For Simple Interest</h2>
+    <label for="principal">Amount</label><br>
+    <input type="number" id="principal" placeholder="0"><br>
+
+    <label for="rate">Percentage%</label><br>
+    <input type="number" id="rate" placeholder="0"><br>
+
+    <label for="time">Time(In Years)</label><br>
+    <input type="number" id="time" placeholder="0">
+
+    <p id="announce"></p>
+    <p id="result1"  style="border-style: solid; border-width: 1px; color: black; border-color: black; padding: 5px; margin-right: 410px;" >Simple Interest</p>
+    <button onclick="simpleInterest()" class="btn">Calculate</button>
+  </div><br><br>
+  <div class="div2">
+    <h2>For Amount</h2>
+    <label for="si2">Simple Interest</label><br>
+    <input type="number" id="si2" placeholder="0"><br>
+
+    <label for="rate2">Percentage%</label><br>
+    <input type="number" id="rate2" placeholder="0"><br>
+
+    <label for="time2">Time(In Years)</label><br>
+    <input type="number" id="time2" placeholder="0">
+
+    <p id="announce"></p>
+    <p id="result2"  style="border-style: solid; border-width: 1px; color: black; border-color: black; padding: 5px; margin-right: 410px;" >Amount</p>
+    <button onclick="amount()" class="btn">Calculate</button>
+  </div>
+  <script src="si.js"></script>
+</body>
+</html>
