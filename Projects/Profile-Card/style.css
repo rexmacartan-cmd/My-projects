@@ -1,0 +1,76 @@
+body{
+  text-align: center;
+  justify-content: center;
+}
+#top{
+  background-color: RoyalBlue;
+  height: 180px;
+  width: 500px;
+  margin: auto;
+  border-color: royalblue;
+  border-style: solid;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 65px;
+  border-color: RoyalBlue;
+  border-width: 5px;
+  border-style: solid;
+}
+#info{
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  border-color: RoyalBlue;
+  border-style: solid;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#info h2{
+  margin-top: 55px;
+  margin-bottom: -5px;
+  font-weight: bolder;
+}
+#bio{
+  font-size: 17px;
+  margin-top: 15;
+}
+.btn{
+  background-color: royalblue;
+  border-style: solid;
+  width: 100px;
+  height: 30px;
+  border-color: royalblue;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+ion-icon{
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.social-links{
+  margin-right: -100px;
+}
+#likes{
+  display: flex;
+}
+#comments{
+  display: flex;
+}
+#shared{
+  display: flex;
+}
+.visibility{
+  display: flex;
+  gap: 50px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
