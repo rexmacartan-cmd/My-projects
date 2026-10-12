@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log("=== Number 1 ===")
+    class person{
+      constructor(name,age,country){
+        this.name = name;
+        this.age = age;
+        this.country = country;
+      }
+      display(){
+        console.log("name: " + this.name)
+        console.log("Age: " + this.age)
+        console.log("Country: " + this.country)
+      }
+
+    }
+    const details = new person("Xylan", 18, "Germany");
+    const details2 = new person("Pebble", 17, "United Kingdom")
+
+    details.display();
+    details2.display();
+
+    console.log("=== Number 2 ===")
+    class Rectangle{
+      constructor(height,width){
+        this.height = height;
+        this.width = width;
+      }
+      area(height,width){
+       console.log(height * width)
+      }
+      perimeter(height,width){
+        console.log(2*height + 2*width)
+      }
+    }
+
+    const area = new Rectangle
+    const peri = new Rectangle
+
+    area.area(20,10)
+    peri.perimeter(20,10)
+
+    console.log("=== Number 4 ===")
+    class BankAccount{
+      constructor(AccNo, AccBal){
+        this.AccNo = AccNo;
+        this.AccBal = AccBal;
+      }
+      deposit(){
+        console.log("=== $500 Billion Has been credited to your account ===")
+      }
+      withdraw(){
+        console.log("=== Successful Withdrawal of $1 For: Sugar and groundnut to drink garri ===")
+      }
+    }
+    
+    const deposit = new BankAccount(8111867872, "Bal: $500,000,000,000")
+    const withdraw = new BankAccount(8111867872, "Bal: $499,999,999,999")
+
+    deposit.deposit();
+    withdraw.withdraw()
+
+    console.log("=== Number 7 ===")
+    class University{
+      constructor(name,department){
+        this.name = name;
+        this.department = department;
+      }
+      addDepartment(){
+        console.log("=== New Department Added ===")
+      }
+      removeDepartment(){
+        console.log("=== A Department has been removed ===" + removeDepartment)
+      }
+    }
+    const addDepartment = new University("UNILAG", ["Software Engineering", "Mechatronics Engineering", "Computer Engineer", "Computer Science"])
+    const removeDepartment = new University("UNILAG", ["Software Engineer", "Mechatronics Engineer", "Computer Engineer"])
+    addDepartment.addDepartment()
+    removeDepartment.removeDepartment()
+  </script>
+</body>
+</html>
